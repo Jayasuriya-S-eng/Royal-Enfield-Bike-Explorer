@@ -1,0 +1,96 @@
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+
+}
+
+.logo{
+
+    height:75px;
+
+}
+
+.bike-img{
+
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.spec-card{
+
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.spec-card h2{
+
+    color:#ff4500;
+
+}
+
+.spec-card table th{
+
+    width:180px;
+
+}
+
+.test-btn{
+
+    background:#ff4500;
+    color:#fff;
+    padding:10px 30px;
+    border:none;
+    border-radius:10px;
+
+}
+
+.test-btn:hover{
+
+    background:#d63b00;
+    color:#fff;
+
+}
+
+.home-btn{
+
+    background:#222;
+    color:#fff;
+    padding:10px 30px;
+    border-radius:10px;
+
+}
+
+.home-btn:hover{
+
+    background:#000;
+    color:#fff;
+
+}
+
+footer{
+
+    margin-top:40px;
+
+}
+
+@media(max-width:768px){
+
+.logo{
+
+height:60px;
+
+}
+
+.spec-card{
+
+margin-top:25px;
+
+}
+
+}

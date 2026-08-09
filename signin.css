@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to right,#f2f2f2,#e2e2e2);
+}
+
+/* Order Card */
+
+.order-card{
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    border-top:5px solid #ff8800;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+/* Heading */
+
+.order-card h1{
+    color:#333;
+    font-weight:600;
+}
+
+/* Form Focus */
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#ff8800;
+    box-shadow:0 0 5px rgba(255,136,0,.3);
+}
+
+/* Submit Button */
+
+.submit-btn{
+    background:#ff8800;
+    color:#fff;
+    font-size:17px;
+    border:none;
+}
+
+.submit-btn:hover{
+    background:darkred;
+    color:#fff;
+}
+
+/* Home Button */
+
+.home-btn{
+    background:#333;
+    color:#fff;
+}
+
+.home-btn:hover{
+    background:#111;
+    color:#fff;
+}
+
+#booknow{
+    background-color: #ff8800;
+}
+/* Responsive */
+
+@media(max-width:768px){
+
+    .order-card{
+        padding:25px;
+    }
+
+    .order-card h1{
+        font-size:1.8rem;
+    }
+
+}

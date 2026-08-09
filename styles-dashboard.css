@@ -1,0 +1,782 @@
+/* ===========================
+   General Styles
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    min-height: 100px;
+    background-color: #000 !important;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+
+/* ===========================
+   Dashboard Navigation
+=========================== */
+
+.dashboard-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin-title {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* ===========================
+   Home Button
+=========================== */
+
+.home-btn {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: linear-gradient(
+        135deg,
+        #ff4500,
+        #ff8800
+    );
+
+    color: white;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    color: white;
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 5px 15px rgba(255, 69, 0, 0.3);
+}
+
+
+/* ===========================
+   Logout Button
+=========================== */
+
+.logout-btn {
+    padding: 8px 18px;
+
+    border: 1px solid #ff4500;
+
+    border-radius: 5px;
+
+    background-color: transparent;
+
+    color: #ff4500;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #ff4500,
+        #ff8800
+    );
+
+    color: white;
+
+    transform: scale(1.05);
+}
+
+
+/* ===========================
+   Dashboard Section
+=========================== */
+
+.dashboard-section {
+    min-height: calc(100vh - 160px);
+
+    padding: 50px 0;
+}
+
+
+/* ===========================
+   Dashboard Heading
+=========================== */
+
+.dashboard-heading {
+    margin-bottom: 35px;
+}
+
+.dashboard-heading h1 {
+    font-size: 40px;
+
+    font-weight: bold;
+
+    color: #222;
+
+    margin-bottom: 8px;
+}
+
+.dashboard-heading p {
+    color: #666;
+
+    font-size: 18px;
+
+    margin: 0;
+}
+
+
+/* ===========================
+   Total Bookings Card
+=========================== */
+
+.stat-card {
+    width: 100%;
+
+    max-width: 400px;
+
+    background: linear-gradient(
+        135deg,
+        #ff4500,
+        #ff8800
+    );
+
+    color: white;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, .15);
+
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, .20);
+}
+
+.stat-card h3 {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 38px;
+
+    font-weight: bold;
+
+    margin: 0;
+}
+
+
+/* ===========================
+   Booking Card
+=========================== */
+
+.booking-card {
+    width: 100%;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, .12);
+
+    overflow: hidden;
+}
+
+
+/* ===========================
+   Table Header
+=========================== */
+
+.table-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.table-header h2 {
+    font-size: 26px;
+
+    font-weight: bold;
+
+    color: #222;
+
+    margin: 0;
+}
+
+
+/* ===========================
+   Refresh Button
+=========================== */
+
+.refresh-btn {
+    border: none;
+
+    border-radius: 5px;
+
+    padding: 9px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #ff4500,
+        #ff8800
+    );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.refresh-btn:hover {
+    transform: scale(1.05);
+
+    box-shadow:
+        0 6px 15px rgba(255, 69, 0, .30);
+}
+
+
+/* ===========================
+   Table Wrapper
+=========================== */
+
+.table-responsive {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border-radius: 8px;
+}
+
+
+/* ===========================
+   Booking Table
+=========================== */
+
+.booking-table {
+    width: 100%;
+
+    min-width: 1500px;
+
+    margin-bottom: 0;
+
+    vertical-align: middle;
+
+    border-collapse: collapse;
+}
+
+
+/* ===========================
+   Table Header
+=========================== */
+
+.booking-table thead {
+    background-color: #111;
+
+    color: white;
+}
+
+.booking-table thead th {
+    padding: 15px 12px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    border: none;
+}
+
+
+/* ===========================
+   Table Body
+=========================== */
+
+.booking-table tbody td {
+    padding: 14px 12px;
+
+    font-size: 14px;
+
+    color: #333;
+
+    white-space: nowrap;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.booking-table tbody tr {
+    background-color: white;
+
+    transition: 0.2s;
+}
+
+.booking-table tbody tr:hover {
+    background-color: #fff3ed;
+}
+
+
+/* ===========================
+   ID Column
+=========================== */
+
+.booking-table tbody td:first-child {
+    font-weight: bold;
+
+    color: #ff4500;
+}
+
+
+/* ===========================
+   Delete Button
+=========================== */
+
+.delete-btn {
+    border: none;
+
+    border-radius: 5px;
+
+    padding: 7px 14px;
+
+    background-color: #dc3545;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #b02a37;
+
+    color: white;
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 5px 12px rgba(220, 53, 69, 0.30);
+}
+
+
+/* ===========================
+   Loading Message
+=========================== */
+
+.loading-message {
+    text-align: center;
+
+    color: #777;
+
+    padding: 20px;
+
+    margin: 0;
+
+    font-size: 15px;
+}
+
+
+/* ===========================
+   Empty Table
+=========================== */
+
+.booking-table tbody:empty {
+    min-height: 50px;
+}
+
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #eee;
+
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        135deg,
+        #ff4500,
+        #ff8800
+    );
+
+    border-radius: 10px;
+}
+
+
+/* ===========================
+   Footer
+=========================== */
+
+.admin-footer {
+    background-color: #000;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 20px;
+}
+
+.admin-footer p {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+
+/* ===========================
+   Animation
+=========================== */
+
+.dashboard-heading {
+    animation: fadeIn 0.8s ease;
+}
+
+.stat-card {
+    animation: fadeIn 1s ease;
+}
+
+.booking-card {
+    animation: fadeIn 1.2s ease;
+}
+
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* ===========================
+   Large Tablet
+=========================== */
+
+@media (max-width: 992px) {
+
+    .dashboard-heading h1 {
+        font-size: 35px;
+    }
+
+    .admin-title {
+        font-size: 16px;
+    }
+
+    .booking-card {
+        padding: 25px;
+    }
+
+    .table-header h2 {
+        font-size: 24px;
+    }
+}
+
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        min-height: 80px;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+
+    /* Navigation */
+
+    .dashboard-nav {
+        gap: 8px;
+    }
+
+    .admin-title {
+        display: none;
+    }
+
+    .home-btn,
+    .logout-btn {
+        padding: 7px 12px;
+
+        font-size: 14px;
+    }
+
+
+    /* Dashboard */
+
+    .dashboard-section {
+        padding: 35px 0;
+    }
+
+    .dashboard-heading {
+        margin-bottom: 25px;
+    }
+
+    .dashboard-heading h1 {
+        font-size: 30px;
+    }
+
+    .dashboard-heading p {
+        font-size: 16px;
+    }
+
+
+    /* Statistics */
+
+    .stat-card {
+        max-width: 100%;
+
+        padding: 22px;
+    }
+
+    .stat-card h3 {
+        font-size: 17px;
+    }
+
+    .stat-card p {
+        font-size: 32px;
+    }
+
+
+    /* Booking Card */
+
+    .booking-card {
+        padding: 20px;
+
+        border-radius: 10px;
+    }
+
+    .table-header {
+        margin-bottom: 20px;
+    }
+
+    .table-header h2 {
+        font-size: 22px;
+    }
+
+    .refresh-btn {
+        padding: 8px 15px;
+
+        font-size: 14px;
+    }
+}
+
+
+/* ===========================
+   Small Mobile
+=========================== */
+
+@media (max-width: 480px) {
+
+    .logo {
+        width: 120px;
+    }
+
+
+    /* Navigation */
+
+    .dashboard-nav {
+        gap: 5px;
+    }
+
+    .home-btn,
+    .logout-btn {
+        padding: 6px 9px;
+
+        font-size: 12px;
+    }
+
+
+    /* Dashboard */
+
+    .dashboard-section {
+        padding: 30px 0;
+    }
+
+    .dashboard-heading {
+        margin-bottom: 20px;
+    }
+
+    .dashboard-heading h1 {
+        font-size: 26px;
+    }
+
+    .dashboard-heading p {
+        font-size: 14px;
+
+        line-height: 1.5;
+    }
+
+
+    /* Statistics */
+
+    .stat-card {
+        padding: 20px;
+
+        border-radius: 10px;
+    }
+
+    .stat-card h3 {
+        font-size: 16px;
+    }
+
+    .stat-card p {
+        font-size: 30px;
+    }
+
+
+    /* Booking Card */
+
+    .booking-card {
+        padding: 15px;
+
+        border-radius: 10px;
+    }
+
+    .table-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .table-header h2 {
+        font-size: 20px;
+    }
+
+    .refresh-btn {
+        width: 100%;
+
+        padding: 10px;
+    }
+
+
+    /* Delete Button */
+
+    .delete-btn {
+        padding: 6px 12px;
+
+        font-size: 12px;
+    }
+
+
+    /* Footer */
+
+    .admin-footer {
+        padding: 18px 10px;
+    }
+
+    .admin-footer p {
+        font-size: 12px;
+    }
+}
+
+
+/* ===========================
+   Extra Small Devices
+=========================== */
+
+@media (max-width: 360px) {
+
+    .logo {
+        width: 105px;
+    }
+
+    .home-btn,
+    .logout-btn {
+        padding: 5px 7px;
+
+        font-size: 11px;
+    }
+
+    .dashboard-heading h1 {
+        font-size: 23px;
+    }
+
+    .booking-card {
+        padding: 12px;
+    }
+
+}

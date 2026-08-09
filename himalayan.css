@@ -1,0 +1,120 @@
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f4f4f4;
+
+}
+
+/* Logo */
+
+.logo{
+
+    height:75px;
+
+}
+
+/* Bike Card */
+
+.bike-card{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.bike-card h2{
+
+    color:#ff4500;
+
+}
+
+.bike-card p{
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* Bike Images */
+
+.bike-img{
+
+   
+    width:100%;
+
+    display:block;
+
+    margin:auto;
+
+    border:none;
+
+    border-radius:0;
+
+    box-shadow:none;
+
+    background:transparent;
+
+    transition:transform .3s ease;
+
+}
+
+.bike-img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* Home Button */
+
+.home-btn{
+
+    background:linear-gradient(135deg,#ff4500,#ff8800);
+
+    color:white;
+
+    padding:10px 25px;
+
+    border-radius:10px;
+
+}
+
+.home-btn:hover{
+
+    background:darkred;
+
+    color:white;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .logo{
+
+        height:60px;
+
+    }
+
+    .bike-card{
+
+        padding:25px;
+
+    }
+
+    .bike-card p{
+
+        font-size:16px;
+
+    }
+
+}

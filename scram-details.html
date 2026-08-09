@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scram 440 Specifications</title>
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scram-details.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="bg-black text-white py-4">
+
+        <div class="container text-center">
+
+            <img src="assests/image2.png"
+                class="logo mb-3"
+                alt="Royal Enfield Logo">
+
+            <h1 class="fw-bold">
+                Scram 440
+            </h1>
+
+            <p class="lead">
+                Specifications & Features
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- Bike Specifications -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- Left Side -->
+
+                <div class="col-lg-6">
+
+                    <img id="bikeImage"
+                        src="assests/scram1.png"
+                        class="img-fluid bike-img"
+                        alt="Scram 440">
+
+                </div>
+
+                <!-- Right Side -->
+
+                <div class="col-lg-6">
+
+                    <div class="spec-card">
+
+                        <h2 class="text-center mb-4">
+                            Specifications
+                        </h2>
+
+                        <table class="table table-bordered">
+
+                            <tr>
+                                <th>Price</th>
+                                <td>₹2.08 Lakh*</td>
+                            </tr>
+
+                            <tr>
+                                <th>Engine</th>
+                                <td>443 cc, Single-Cylinder, Air-Oil Cooled</td>
+                            </tr>
+
+                            <tr>
+                                <th>Maximum Power</th>
+                                <td>25.4 bhp @ 6250 rpm</td>
+                            </tr>
+
+                            <tr>
+                                <th>Maximum Torque</th>
+                                <td>34 Nm @ 4000 rpm</td>
+                            </tr>
+
+                            <tr>
+                                <th>Transmission</th>
+                                <td>6-Speed Manual</td>
+                            </tr>
+
+                            <tr>
+                                <th>Mileage</th>
+                                <td>30 km/l (Approx.)</td>
+                            </tr>
+
+                            <tr>
+                                <th>Fuel Tank Capacity</th>
+                                <td>15 Litres</td>
+                            </tr>
+
+                            <tr>
+                                <th>Kerb Weight</th>
+                                <td>196 kg</td>
+                            </tr>
+
+                            <tr>
+                                <th>Top Speed</th>
+                                <td>135 km/h (Approx.)</td>
+                            </tr>
+
+                            <tr>
+                                <th>Brakes</th>
+                                <td>Disc Brakes (Front & Rear)</td>
+                            </tr>
+
+                            <tr>
+                                <th>ABS</th>
+                                <td>Dual Channel ABS</td>
+                            </tr>
+
+                            <tr>
+                                <th>Starting</th>
+                                <td>Electric Start</td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="text-center mt-5">
+
+                 <a href="sign.html" class="btn home-btn">
+                    Book Bike
+                </a>
+
+                <a href="scram.html" class="btn home-btn">
+                    Back to Colors
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-black text-white text-center py-4">
+
+        <p class="mb-0">
+            © 2025 Royal Enfield. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script>
+
+        const params = new URLSearchParams(window.location.search);
+
+        const image = params.get("img");
+
+        if (image) {
+
+            document.getElementById("bikeImage").src = "assests/" + image;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

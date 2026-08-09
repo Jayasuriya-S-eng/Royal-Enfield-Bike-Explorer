@@ -1,0 +1,393 @@
+/* ===========================
+   General Styles
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 100px;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+
+/* ===========================
+   Admin Section
+=========================== */
+
+.admin-section {
+    min-height: calc(100vh - 100px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, .6),
+            rgba(0, 0, 0, .6)
+        ),
+        url("assests/img1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ===========================
+   Admin Container
+=========================== */
+
+.admin-container {
+    width: 100%;
+    max-width: 450px;
+}
+
+
+/* ===========================
+   Admin Card
+=========================== */
+
+.admin-card {
+    background: rgba(255, 255, 255, 0.96);
+
+    border-radius: 12px;
+
+    padding: 45px 40px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .30);
+
+    animation: fadeIn 1.2s ease;
+}
+
+
+/* ===========================
+   Heading
+=========================== */
+
+.admin-card h1 {
+    text-align: center;
+
+    font-size: 35px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    color: #222;
+}
+
+.admin-subtitle {
+    text-align: center;
+
+    font-size: 16px;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+/* ===========================
+   Input Groups
+=========================== */
+
+.input-group-custom {
+    margin-bottom: 20px;
+}
+
+.input-group-custom label {
+    display: block;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #222;
+
+    margin-bottom: 8px;
+}
+
+.input-group-custom input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    background-color: #fff;
+
+    color: #222;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.input-group-custom input:focus {
+    border-color: #ff4500;
+
+    box-shadow: 0 0 6px rgba(255, 69, 0, 0.3);
+}
+
+.input-group-custom input::placeholder {
+    color: #999;
+}
+
+
+/* ===========================
+   Login Button
+=========================== */
+
+.login-btn {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #ff8800;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+
+
+/* ===========================
+   Home Button
+=========================== */
+
+.back-btn {
+    display: block;
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 15px;
+
+   
+
+    border-radius: 6px;
+
+    background-color: #ff8800;
+
+    color: white;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+
+
+/* ===========================
+   Message
+=========================== */
+
+.message {
+    text-align: center;
+
+    margin-top: 20px;
+
+    min-height: 20px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+/* ===========================
+   Footer
+=========================== */
+
+.admin-footer {
+    background-color: #000;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.admin-footer p {
+    margin: 0;
+}
+
+
+/* ===========================
+   Animation
+=========================== */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* ===========================
+   Responsive - Tablet
+=========================== */
+
+@media (max-width: 992px) {
+
+    .admin-container {
+        max-width: 430px;
+    }
+
+}
+
+
+/* ===========================
+   Responsive - Mobile
+=========================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: 80px;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .admin-section {
+        min-height: calc(100vh - 80px);
+
+        padding: 40px 20px;
+    }
+
+    .admin-card {
+        padding: 35px 25px;
+    }
+
+    .admin-card h1 {
+        font-size: 30px;
+    }
+
+    .admin-subtitle {
+        font-size: 15px;
+    }
+
+    .input-group-custom input {
+        padding: 12px;
+
+        font-size: 15px;
+    }
+
+    .login-btn {
+        font-size: 17px;
+    }
+
+    .back-btn {
+        font-size: 16px;
+    }
+}
+
+
+/* ===========================
+   Responsive - Small Mobile
+=========================== */
+
+@media (max-width: 480px) {
+
+    .logo {
+        width: 120px;
+    }
+
+    .admin-section {
+        padding: 30px 15px;
+    }
+
+    .admin-card {
+        padding: 30px 20px;
+
+        border-radius: 10px;
+    }
+
+    .admin-card h1 {
+        font-size: 27px;
+    }
+
+    .admin-subtitle {
+        font-size: 14px;
+    }
+
+    .input-group-custom label {
+        font-size: 14px;
+    }
+
+    .input-group-custom input {
+        padding: 11px;
+    }
+
+    .login-btn {
+        padding: 12px;
+    }
+
+    .back-btn {
+        padding: 11px;
+        font-size: 15px;
+    }
+}

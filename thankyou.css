@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(to right,#f2f2f2,#e0e0e0);
+
+}
+
+/* Thank You Card */
+
+.thank-card{
+
+    background:#fff;
+
+    max-width:550px;
+
+    width:100%;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    border-top:5px solid #ff8800;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+
+}
+
+/* Heading */
+
+.thank-card h1{
+
+    color:#2e7d32;
+
+    font-weight:600;
+
+}
+
+/* Paragraph */
+
+.thank-card p{
+
+    color:#555;
+
+    font-size:17px;
+
+    line-height:1.7;
+
+}
+
+/* Button */
+
+.home-btn{
+
+    background:#ff8800;
+
+    color:#fff;
+
+    padding:10px 30px;
+
+    border:none;
+
+}
+
+.home-btn:hover{
+
+    background:darkred;
+
+    color:#fff;
+
+}
+
+/* Responsive */
+
+@media(max-width:576px){
+
+    .thank-card{
+
+        padding:25px;
+
+        margin:20px;
+
+    }
+
+    .thank-card h1{
+
+        font-size:2rem;
+
+    }
+
+}

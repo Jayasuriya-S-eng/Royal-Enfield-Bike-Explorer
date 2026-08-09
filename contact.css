@@ -1,0 +1,135 @@
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f8f9fa;
+
+}
+
+/* Logo */
+
+.logo{
+
+    height:70px;
+
+}
+
+/* Navbar */
+
+.nav-btn{
+
+    background:linear-gradient(135deg,#ff4500,#ff8800);
+
+    color:white;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.nav-btn:hover{
+
+    background:darkred;
+
+    color:white;
+
+    transform:scale(1.05);
+
+}
+
+/* Hero */
+
+.contact-hero{
+
+    background:linear-gradient(to right,#ffffff,#f1f1f1);
+
+    padding:80px 20px;
+
+}
+
+.contact-hero p{
+
+    color:#666;
+
+}
+
+/* Contact Card */
+
+.contact-box{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.contact-box h2{
+
+    margin-bottom:20px;
+
+    color:#111;
+
+}
+
+.contact-box p{
+
+    color:#555;
+
+}
+
+/* Button */
+
+.submit-btn{
+
+    background:#1f1f1f;
+
+    color:white;
+
+}
+
+.submit-btn:hover{
+
+    background:#444;
+
+    color:white;
+
+}
+
+.home-btn{
+
+    background:#ff4500;
+
+    color:white;
+
+}
+
+.home-btn:hover{
+
+    background:darkred;
+
+    color:white;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .logo{
+
+        height:55px;
+
+    }
+
+    .nav-btn{
+
+        margin-top:8px;
+
+    }
+
+}

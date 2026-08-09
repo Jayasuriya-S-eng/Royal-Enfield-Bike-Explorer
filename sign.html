@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Enfield | Bike Booking</title>
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="signin.css">
+
+
+</head>
+
+<body>
+
+<div class="container py-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+            <div class="order-card p-4 shadow rounded">
+
+                <h2 class="text-center mb-4">
+                    Royal Enfield Bike Booking
+                </h2>
+
+                <form id="bookingForm">
+
+                    <!-- Customer Details -->
+
+                    <h4 class="mb-3">Customer Details</h4>
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+                            <label>Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label>Father / Guardian Name</label>
+                            <input type="text" class="form-control" id="fatherName" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label>Mobile Number</label>
+                            <input type="tel"
+                                   class="form-control"
+                                   id="phone"
+                                   pattern="[0-9]{10}"
+                                   required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label>Date of Birth</label>
+                            <input type="date" class="form-control" id="dob" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label>Gender</label>
+
+                            <select class="form-select" id="gender" required>
+                                <option value="">Select</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- Bike Details -->
+
+                    <h4 class="mb-3">Bike Details</h4>
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+
+                            <label>Bike Model</label>
+
+                            <select class="form-select" id="model" required>
+
+                                <option value="">Select Model</option>
+
+                                <option>Classic 350</option>
+                                <option>Bullet 350</option>                                
+                                <option>Meteor 350</option>
+                                <option>Himalayan 450</option>
+                                 <option>Scram 440</option>                                
+                                <option>Continental GT 650</option>
+                               
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+
+                            <label>Colour</label>
+
+                            <select class="form-select" id="color">
+
+                                <option>Black</option>
+                                <option>Red</option>
+                                <option>Blue</option>
+                                <option>Grey</option>
+                                <option>Green</option>
+                                <option>Silver</option>
+
+                            </select>
+
+                        </div>
+
+                        
+
+                    </div>
+
+                    <hr>
+
+                    <!-- Delivery Details -->
+
+                    <h4 class="mb-3">Delivery Details</h4>
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+                            <label>State</label>
+                            <input type="text" class="form-control" id="state" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label>City</label>
+                            <input type="text" class="form-control" id="city" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label>PIN Code</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="pincode"
+                                   pattern="[0-9]{6}"
+                                   required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label>Preferred Showroom</label>
+
+                            <select class="form-select" id="showroom">
+
+                                <option>Anna Nagar</option>
+                                <option>Velachery</option>
+                                <option>Tambaram</option>
+                                <option>OMR</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label>Delivery Address</label>
+
+                            <textarea class="form-control"
+                                      id="address"
+                                      rows="4"
+                                      required></textarea>
+
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- Payment Details -->
+
+                    <h4 class="mb-3">Payment Details</h4>
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+
+                            <label>Payment Method</label>
+
+                            <select class="form-select" id="payment">
+
+                                <option>Cash</option>
+                                <option>UPI</option>
+                                <option>Credit Card</option>
+                                <option>Debit Card</option>
+                                <option>Net Banking</option>
+                                <option>Bike Loan</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+
+                            <label>Finance Required</label>
+
+                            <select class="form-select" id="finance">
+
+                                <option>No</option>
+                                <option>Yes</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- Accessories -->
+
+                    <h4 class="mb-3">Accessories</h4>
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <input type="checkbox"> Helmet
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="checkbox"> Riding Jacket
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="checkbox"> Crash Guard
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="checkbox"> Saddle Bag
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="checkbox"> Touring Kit
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="checkbox"> Mobile Holder
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- Terms -->
+
+                    <div class="form-check mt-3">
+
+                        <input class="form-check-input"
+                               type="checkbox"
+                               required>
+
+                        <label class="form-check-label">
+
+                            I agree to the Terms & Conditions.
+
+                        </label>
+
+                    </div>
+
+                    <button id="booknow"
+                            type="submit"
+                            class="btn  w-100 mt-4">
+
+                        Book Now
+
+                    </button>
+
+                </form>
+
+                <div class="text-center mt-3">
+
+                    <a href="index.html" class="btn btn-secondary">
+                        Back to Home
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

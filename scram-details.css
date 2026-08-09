@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+.logo {
+    width: 220px;
+}
+
+/* Bike Image */
+
+.bike-img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+.bike-img:hover {
+    transform: scale(1.05);
+}
+
+/* Specification Card */
+
+.spec-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Table */
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    width: 40%;
+    background: #212529;
+    color: white;
+    vertical-align: middle;
+}
+
+.table td {
+    vertical-align: middle;
+    background: #ffffff;
+}
+
+/* Buttons */
+
+.test-btn {
+    background: #d50000;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.test-btn:hover {
+    background: #b00000;
+    color: white;
+}
+
+.home-btn {
+    background: #212529;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: #000;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+    .spec-card {
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .bike-img {
+        margin-bottom: 25px;
+    }
+
+    .spec-card {
+        padding: 20px;
+    }
+
+    .table th,
+    .table td {
+        font-size: 14px;
+    }
+
+    .test-btn,
+    .home-btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}

@@ -1,0 +1,407 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Royal Enfield</title>
+
+
+    <!-- Bootstrap CSS -->
+
+    <link
+        href="bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- Dashboard CSS -->
+
+    <link
+        rel="stylesheet"
+        href="styles-dashboard.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ===========================
+         Navbar
+    =========================== -->
+
+    <nav class="navbar navbar-dark bg-black">
+
+        <div class="container-fluid px-5">
+
+
+            <!-- Logo -->
+
+            <a
+                class="navbar-brand"
+                href="index.html">
+
+                <img
+                    src="assests/image2.png"
+                    alt="Royal Enfield"
+                    class="logo">
+
+            </a>
+
+
+            <!-- Dashboard Navigation -->
+
+            <div class="dashboard-nav">
+
+
+                <span class="admin-title">
+
+                    Admin Dashboard
+
+                </span>
+
+
+                <a
+                    href="index.html"
+                    class="home-btn">
+
+                    Home
+
+                </a>
+
+
+                <button
+                    id="logoutBtn"
+                    class="logout-btn">
+
+                    Logout
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ===========================
+         Dashboard Section
+    =========================== -->
+
+    <section class="dashboard-section">
+
+
+        <div class="container-fluid px-4">
+
+
+            <!-- ===========================
+                 Heading
+            =========================== -->
+
+            <div class="dashboard-heading">
+
+                <h1>
+
+                    Booking Management
+
+                </h1>
+
+
+                <p>
+
+                    View and manage Royal Enfield
+                    customer bookings
+
+                </p>
+
+            </div>
+
+
+
+            <!-- ===========================
+                 Statistics
+            =========================== -->
+
+            <div class="row g-4 mb-4">
+
+
+                <div class="col-md-4">
+
+
+                    <div class="stat-card">
+
+
+                        <h3>
+
+                            Total Bookings
+
+                        </h3>
+
+
+                        <p id="totalBookings">
+
+                            0
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ===========================
+                 Booking Table
+            =========================== -->
+
+            <div class="booking-card">
+
+
+                <!-- Table Header -->
+
+                <div class="table-header">
+
+
+                    <h2>
+
+                        Customer Bookings
+
+                    </h2>
+
+
+                    <button
+                        id="refreshBtn"
+                        class="refresh-btn">
+
+                        Refresh
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- Table -->
+
+                <div class="table-responsive">
+
+
+                    <table
+                        class="table booking-table">
+
+
+                        <!-- Table Head -->
+
+                        <thead>
+
+                            <tr>
+
+
+                                <th>
+
+                                    ID
+
+                                </th>
+
+
+                                <th>
+
+                                    Name
+
+                                </th>
+
+
+                                <th>
+
+                                    Father Name
+
+                                </th>
+
+
+                                <th>
+
+                                    Email
+
+                                </th>
+
+
+                                <th>
+
+                                    Phone
+
+                                </th>
+
+
+                                <th>
+
+                                    DOB
+
+                                </th>
+
+
+                                <th>
+
+                                    Gender
+
+                                </th>
+
+
+                                <th>
+
+                                    Model
+
+                                </th>
+
+
+                                <th>
+
+                                    Color
+
+                                </th>
+
+
+                                <th>
+
+                                    State
+
+                                </th>
+
+
+                                <th>
+
+                                    City
+
+                                </th>
+
+
+                                <th>
+
+                                    Pincode
+
+                                </th>
+
+
+                                <th>
+
+                                    Showroom
+
+                                </th>
+
+
+                                <th>
+
+                                    Address
+
+                                </th>
+
+
+                                <th>
+
+                                    Payment
+
+                                </th>
+
+
+                                <th>
+
+                                    Finance
+
+                                </th>
+
+
+                                <th>
+
+                                    Delete
+
+                                </th>
+
+
+                            </tr>
+
+                        </thead>
+
+
+
+                        <!-- Table Body -->
+
+                        <tbody
+                            id="bookingTableBody">
+
+                            <!--
+                                Bookings will be
+                                inserted here
+                                using JavaScript
+                            -->
+
+                        </tbody>
+
+
+                    </table>
+
+                </div>
+
+
+
+                <!-- Loading / Empty Message -->
+
+                <p
+                    id="loadingMessage"
+                    class="loading-message">
+
+                    Loading bookings...
+
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+         Footer
+    =========================== -->
+
+    <footer class="admin-footer">
+
+
+        <p>
+
+            © 2025 Royal Enfield.
+            All Rights Reserved.
+
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- ===========================
+         JavaScript
+    =========================== -->
+
+    <script
+        src="admin-dashboard.js">
+    </script>
+
+
+</body>
+
+</html>
+```

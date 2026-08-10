@@ -3,7 +3,6 @@ document.addEventListener(
     loadBookings
 );
 
-
 // ===========================
 // Refresh Button
 // ===========================
@@ -15,7 +14,6 @@ document
         loadBookings
     );
 
-
 // ===========================
 // Logout Button
 // ===========================
@@ -26,7 +24,6 @@ document
         "click",
         logout
     );
-
 
 // ===========================
 // Load All Bookings
@@ -44,17 +41,14 @@ async function loadBookings() {
             "loadingMessage"
         );
 
-
     try {
 
         loadingMessage.textContent =
             "Loading bookings...";
 
-
         const response = await fetch(
-            "http://localhost:8080/admin/bookings"
+            "https://royal-enfield-backend.onrender.com/admin/bookings"
         );
-
 
         if (!response.ok) {
 
@@ -64,26 +58,19 @@ async function loadBookings() {
 
         }
 
-
         const bookings =
             await response.json();
 
-
         // Clear old rows
-
         tableBody.innerHTML = "";
 
-
         // Total bookings
-
         document.getElementById(
             "totalBookings"
         ).textContent =
             bookings.length;
 
-
         // No bookings
-
         if (bookings.length === 0) {
 
             loadingMessage.textContent =
@@ -92,17 +79,13 @@ async function loadBookings() {
             return;
         }
 
-
         loadingMessage.textContent = "";
 
-
         // Display bookings
-
         bookings.forEach(function (booking) {
 
             const row =
                 document.createElement("tr");
-
 
             row.innerHTML = `
 
@@ -184,24 +167,19 @@ async function loadBookings() {
 
             `;
 
-
             tableBody.appendChild(row);
 
         });
-
 
     } catch (error) {
 
         console.error(error);
 
-
         loadingMessage.textContent =
             "Unable to load bookings.";
 
     }
-
 }
-
 
 // ===========================
 // Delete Booking
@@ -214,50 +192,38 @@ async function deleteBooking(id) {
             "Are you sure you want to delete this booking?"
         );
 
-
     if (!confirmation) {
-
         return;
-
     }
-
 
     try {
 
         const response =
             await fetch(
-                `http://localhost:8080/admin/bookings/${id}`,
+                `https://royal-enfield-backend.onrender.com/admin/bookings/${id}`,
                 {
                     method: "DELETE"
                 }
             );
 
-
         const message =
             await response.text();
 
-
         alert(message);
 
-
         // Reload table
-
         loadBookings();
-
 
     } catch (error) {
 
         console.error(error);
-
 
         alert(
             "Unable to delete booking."
         );
 
     }
-
 }
-
 
 // ===========================
 // Logout
@@ -267,5 +233,4 @@ function logout() {
 
     window.location.href =
         "admin.html";
-
 }
